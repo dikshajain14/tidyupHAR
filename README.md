@@ -49,6 +49,26 @@ Using *rbind()*, merge the variables **train.data** and **test.data** (created i
 
 # 4. Appropriately labels the data set with descriptive variable names.
 
-1. Assign the name 'activity' to the column **y** of the data frame **tidy.data**.
+1. Assign the name **'activity'** to the column **y** of the data frame **tidy.data**.
 
 2. Using *sub()*, make the following replacements to the column names of **tidy.data**:
+ - change "acc" to "Acceleration"
+ - change beginning "t" to "time"
+  - change beginning "f" to "frequency"
+  - remove the first occurrence of "-"
+  - change "Mag" to "Magnitude"
+  - change "mean()" to "Mean"
+  - change "std()" to "STD"
+  - change "freq()" to "Frequency"
+  -  change "Gyro" to "Gyroscope"
+
+# 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+1. Load the package *dplyr*.  
+
+2. While chaining, use *group_by()* to perform grouping by **activity** and **subject**.  
+
+3. Chain the grouped data table to *summarize_all()* with function as *mean* to find average of all the columns (other than subject and activity) and save the result into a variable **agg.data**.
+
+4. At the end, use *write.table()* to save the **agg.data** created into a file named **AggData.txt** with *rownames=FALSE*.  
+
