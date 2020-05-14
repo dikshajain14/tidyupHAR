@@ -10,10 +10,11 @@ These signals were used to estimate variables of the feature vector for each pat
 
 # Features in aggdata.txt
 
-After performing the following actions on the original data set (as explained above), following are the features present in the file aggdata.txt. All the features except "activity" and "subject" are the mean (average) values of the original measures recorded for each activity per subject. 
+After performing the following actions on the original data set (as explained above), following are the features present in the file aggdata.txt. All the features except "activity" and "subject" are the mean (average) values of the original measures recorded for each activity per subject. Only mean and standard deviation features were selected from the original dataset and included in this data set. 
 
 "activity" : Activity label with possible values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING   
-"subject" : An identifier of the subject who carried out the experiment.
+"subject" : Each row identifies the subject who performed the activity. Its range is from 1 to 30.   
+
 "timeBodyAccelerationMean-X"  
 "timeBodyAccelerationMean-Y"  
 "timeBodyAccelerationMean-Z"  
