@@ -2,7 +2,7 @@
 Submitted as Course Project for the course Getting and Cleaning Data (Coursera)
 
 # Overview
-The purpose of this README file is to explain all the steps performed in the file run_analysis.R The file run_analysis.R
+The purpose of this file is to explain all the steps performed in the file run_analysis.R The file run_analysis.R
 is an R script file that performs the following tasks on Human Activity Recognition Data recorded using Samsung Galaxy S
 smartphone. The tasks are as follows:  
 1 - Merges the training and the test sets to create one data set.  
