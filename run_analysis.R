@@ -47,8 +47,8 @@ features <- features[[2]]
 var.names <- c(features,"subject","y")
 names(full.data) <- var.names
 
-mean.cols <- grep(pattern = "mean",features)
-std.cols <- grep(pattern = "std",features)
+mean.cols <- grep(pattern = "mean",features,ignore.case = TRUE)
+std.cols <- grep(pattern = "std",features,ignore.case = TRUE)
 
 tidy.data <- full.data[,c(mean.cols,std.cols)]
 tidy.data <- cbind(subject=full.data$subject,
